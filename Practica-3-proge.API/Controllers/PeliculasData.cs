@@ -109,40 +109,41 @@ namespace Practica_3_proge.API.Controllers
 
 
                 },
-                   new PeliculasDto()
+                   
+                  new PeliculasDto()
             {
-                Id = 4,
-                Name = "Leon el Profesional",
-                Sinopsis = "Mathilda es una niña que no se lleva bien con su familia, excepto con su hermano pequeño. Su padre es un narcotraficante que hace negocios con Stan, un corrupto agente de la D.E.A. Un día Stan mata a su familia y Mathilda se refugia en casa de Léon, un solitario y misterioso vecino que resulta ser un asesino a sueldo, pero hará un pacto con él: ella se encargará de las tareas domésticas y le enseñará a leer a Léon y éste le enseñará a disparar para poder vengarse de la muerte de su hermano.",
-                Reviews = new List<ReviewsDto>()
-                {
-                    new ReviewsDto()
+                    Id = 4,
+                    Name = "Leon el Profesional",
+                    Sinopsis = "Mathilda es una niña que no se lleva bien con su familia, excepto con su hermano pequeño. Su padre es un narcotraficante que hace negocios con Stan, un corrupto agente de la D.E.A. Un día Stan mata a su familia y Mathilda se refugia en casa de Léon, un solitario y misterioso vecino que resulta ser un asesino a sueldo, pero hará un pacto con él: ella se encargará de las tareas domésticas y le enseñará a leer a Léon y éste le enseñará a disparar para poder vengarse de la muerte de su hermano.",
+                    Reviews = new List<ReviewsDto>()
                     {
-                        Id = 1,
-                        Name = "Gabrieñ",
-                        Description = "Terrible"
-                    },
-                    new ReviewsDto()
-                    {
-                        Id = 2,
-                        Name = "Matias",
-                        Description = "Pobre familia"
-                    },
+                        new ReviewsDto()
+                        {
+                            Id = 1,
+                            Name = "Gabrieñ",
+                            Description = "Terrible"
+                        },
+                        new ReviewsDto()
+                        {
+                            Id = 2,
+                            Name = "Matias",
+                            Description = "Pobre familia"
+                        },
 
-                    new ReviewsDto()
-                    {
-                        Id = 3,
-                        Name = "Max",
-                        Description = "Muy buena actriz Natalie Portman"
-                    },
-                    new ReviewsDto()
-                    {
-                        Id = 4,
-                        Name = "Lucia",
-                        Description = "Cuidaba muy bien a su planta"
-                    },
-                }
-            }   
+                        new ReviewsDto()
+                        {
+                            Id = 3,
+                            Name = "Max",
+                            Description = "Muy buena actriz Natalie Portman"
+                        },
+                        new ReviewsDto()
+                        {
+                            Id = 4,
+                            Name = "Lucia",
+                            Description = "Cuidaba muy bien a su planta"
+                        },
+                    }
+                  }   
             };
         }
     }

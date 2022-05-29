@@ -22,7 +22,13 @@ namespace Practica_3_proge.API.Controllers
         }
 
         [HttpDelete("{id}")]
-        public ActionResult<>
+        public ActionResult<PeliculasDto> DeletePelicula(int id)
+        {
+            var peliculaABorrar = PeliculasData.InstanciaActual.Peliculas.FirstOrDefault(x => x.Id == id);
+            if (peliculaABorrar == null)
+                return NotFound();
+            return Ok();
+        }
         
 
     }
