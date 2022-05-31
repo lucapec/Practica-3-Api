@@ -3,7 +3,7 @@
 namespace Practica_3_proge.API.Controllers
 {
     [ApiController]
-    [Route("api/peliculas/{idPelicula}")]
+    [Route("api/peliculas/{idPelicula}/reviews")]
     public class ReviewsController : ControllerBase
     {
         [HttpGet]
@@ -17,12 +17,12 @@ namespace Practica_3_proge.API.Controllers
         }
 
         [HttpGet("{idReviews}", Name = "GetReviews")]
-        public ActionResult<ReviewsDto>GetReviews(int idPelicula, int idReview)
+        public ActionResult<ReviewsDto>GetReviews(int idPelicula, int idReviews)
         {
             var pelicula = PeliculasData.InstanciaActual.Peliculas.FirstOrDefault(x => x.Id == idPelicula);
             if (pelicula == null)
                 return NotFound();
-            var reviews = pelicula.Reviews.FirstOrDefault(x => x.Id == idReview);
+            var reviews = pelicula.Reviews.FirstOrDefault(x => x.Id == idReviews);
             if (reviews == null)
                 return NotFound(reviews);
             return Ok(reviews);

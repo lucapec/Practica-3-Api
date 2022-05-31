@@ -1,6 +1,6 @@
 ﻿namespace Practica_3_proge.API.Controllers
 {
-    internal class ReviewsDto
+    public class ReviewsDto
     {
         public int Id { get; set; }
         public string Name { get; set; } = string.Empty;
