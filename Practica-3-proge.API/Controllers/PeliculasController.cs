@@ -21,6 +21,7 @@ namespace Practica_3_proge.API.Controllers
             return Ok(peliculaADevolver.Name);
         }
 
+
         [HttpDelete("{id}")]
         public ActionResult<PeliculasDto> DeletePelicula(int id)
         {
